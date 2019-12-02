@@ -1,3 +1,6 @@
 ffmpeg-build:
     build: .
+    environment:
+        TARGET_MARCH: native
     volumes: 
+        - ./artifacts:/mnt/artifacts
